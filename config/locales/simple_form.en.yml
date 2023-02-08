@@ -1,0 +1,14 @@
+en:
+  simple_form:
+    placeholders:
+      quote:
+        name: Agrega tu nota
+    labels:
+      quote:
+        name: Nombre
+
+  helpers:
+    submit:
+      quote:
+        create: Crear nota
+        update: actualizar nota

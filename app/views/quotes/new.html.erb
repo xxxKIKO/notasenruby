@@ -1,0 +1,9 @@
+<main class="container">
+  <%= link_to sanitize("&larr; Volver a las notas"), quotes_path %>
+
+  <div class="header">
+    <h1>Nueva nota</h1>
+  </div>
+
+  <%= render "form", nota: @quote %>
+</main>

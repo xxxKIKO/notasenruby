@@ -1,0 +1,10 @@
+<main class="container">
+  <div class="header">
+    <h1>Notas</h1>
+    <%= link_to "Nueva nota",
+                new_quote_path,
+                class: "btn btn--primary" %>
+  </div>
+
+  <%= render @quotes %>
+</main>
