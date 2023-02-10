@@ -83,5 +83,12 @@ test:
 # for a full overview on how database connection configuration can be specified.
 #
 production:
-  <<: *default
-  url: <%= ENV["PROYECTO_CRUD_DATABASE_URL"] %>
+  dapter: postgresql
+  encoding: unicode
+  username: username
+  password: 123
+  database: proyecto_crud_production
+  # For details on connection pooling, see Rails configuration guide
+  # https://guides.rubyonrails.org/configuring.html#database-pooling
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+
